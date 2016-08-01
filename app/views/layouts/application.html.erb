@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 <% flash.each do |name, message| %>
   <div class="alert alert-<%= name %> alert-dismissible" role="alert">
@@ -14,6 +15,7 @@
   </div>
 <% end %>
 <%= yield %>
+
 
 </body>
 </html>
